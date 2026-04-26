@@ -1,26 +1,26 @@
 # 附录 A.2 · 破框率的跨研究定位
 
 > **Appendix A.2 · Cross-Study Positioning of Extraposition Rates**
->
-> 本节将本文的核心分布指标与既有研究在总体破框率、成分类型分布与从句内部分布三个层面依次比较，论证破框在当代德语书面语中并非边缘偶发现象，而是稳定、可观测的结构特征。
->
-> *This section compares the core distribution metrics of this study against prior research at three levels: overall extraposition rate, constituent type distribution, and within-clause distribution.*
+
+本节将本文的核心分布指标与既有研究在总体破框率、成分类型分布与从句内部分布三个层面依次比较，论证破框在当代德语书面语中并非边缘偶发现象，而是稳定、可观测的结构特征。
+
+*This section compares the core distribution metrics of this study against prior research at three levels: overall extraposition rate, constituent type distribution, and within-clause distribution.*
 
 ---
 
 ## 跨研究指标对比
 
-附表 A1 汇总了本文核心分布指标与既有研究的对比（详细指标统计结果见 [附录 B1](B_data_and_methods/)）。各研究在语料来源、统计口径与破框识别标准上存在差异，以下按总体破框率、成分类型分布与从句内部分布三个层面依次比较。
+附表 A1 汇总了本文核心分布指标与既有研究的对比（详细统计结果见 [附录 B1](B_data_and_methods/)）。各研究在语料来源、统计口径与破框识别标准上存在差异。
 
 ### 附表 A1 · 破框率与成分分布的跨研究对比
 
 | 层面 | 指标 | 本文（HDT 科技新闻） | 既有研究报告值 |
 |:---|:---|:---:|:---|
-| **总体** | 破框率 | **12.21%** | 13.03%（区域口语从句外置率；Dubenion-Smith，2024）；10.9%（关系从句诱导产出；Cortés Rodríguez et al.，2024）；32.61%（报刊语料；李媛等，2021） |
-| **成分类型** | 非短语形式占比 | **88.84%** | 多语体研究一致报告非短语形式占绝对优势（Makovec，1983；Zahn，1991；Schneider-Wiejowski，2010；Birnstingl，2013） |
+| 总体 | 破框率 | **12.21%** | 13.03%（区域口语从句外置率；Dubenion-Smith，2024）<br>10.9%（关系从句诱导产出；Cortés Rodríguez et al.，2024）<br>32.61%（报刊语料；李媛等，2021） |
+| 成分类型 | 非短语形式占比 | **88.84%** | 多语体研究一致报告非短语形式占绝对优势（Makovec，1983；Zahn，1991；Schneider-Wiejowski，2010；Birnstingl，2013） |
 |  | 短语中介词短语占比 | **65.06%** | 新闻、政治演讲及方言语料中均居首位（同上） |
-|  | 带 zu 不定式占非短语比 | **24.59%** | 13.31%（区域口语；Dubenion-Smith，2024）；约 2%（方言；Patocka，1997） |
-| **从句内部** | 宾语从句占比 | **33.87%** | 方言语料中同居前列（Patocka，1997） |
+|  | 带 zu 不定式占非短语比 | **24.59%** | 13.31%（区域口语；Dubenion-Smith，2024）<br>约 2%（方言；Patocka，1997） |
+| 从句内部 | 宾语从句占比 | **33.87%** | 方言语料中同居前列（Patocka，1997） |
 |  | 关系从句占比 | **33.94%** | — |
 
 ---
@@ -29,17 +29,12 @@
 
 本文的 12.21% 与 Dubenion-Smith（2024）报告的区域口语从句外置率（13.03%）及 Cortés Rodríguez et al.（2024）诱导产出实验的关系从句外置率（10.9%）处于相近区间，落入早期文学文本的理论概率区间（4%–32%，Pfütze，1966），但明显低于李媛等（2021）对报刊语料的测算（32.61%）。
 
-**口径差异可解释部分落差**：
-
-- Dubenion-Smith 仅统计从句外置且以有明确右句框的句子为分母
-- Cortés Rodríguez 仅涉及关系从句的诱导产出
-
-**与李媛等（2021）的差距则涉及语料与程序两个层面**：
+口径差异可解释部分落差：Dubenion-Smith 仅统计从句外置且以有明确右句框的句子为分母，Cortés Rodríguez 仅涉及关系从句的诱导产出。**与李媛等（2021）的差距则涉及语料与程序两个层面**：
 
 | 层面 | 李媛等（2021） | 本文 |
 |:---|:---|:---|
 | 语料来源 | Die Tageszeitung 报刊 | HDT 科技新闻网站 |
-| 识别程序 | 直接沿用 TüBa-D/Z "后场" 标签 | 依据 UD 依存自动提取，排除并列主句与叙述性插入语 |
+| 识别程序 | 直接沿用 TüBa-D/Z "后场" 标签 | 依据 UD 依存自动提取，排除并列主句与叙述性引用插入语等非典型结构 |
 | 识别保守度 | 较宽松 | 更保守 |
 
 跨研究的破框率比较因此需要同时参照**语料来源、操作化标准与分母口径**三个层面。
