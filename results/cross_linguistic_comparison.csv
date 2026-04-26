@@ -1,0 +1,6 @@
+语言,Language,框型结构,Sentential_Frame,外置率_pct,Topology_pct,Processing_pct,Information_pct,Form_pct,Role_pct,MDD传导占比_pct,作用类型,Action_Type
+德语,German,有(严格),Strict,12.2,33.4,14.8,31.3,10.7,9.9,66,传导主导,Transmission_Dominant
+荷兰语,Dutch,有(较宽松),Loose,9.2,22.5,16.1,44.1,8.2,9.1,49,混合偏传导,Mixed_Transmission_Leaning
+瑞典语,Swedish,无,None,25.2,11.8,10.9,47.9,11.2,18.3,0,直接主导,Direct_Dominant
+丹麦语,Danish,无,None,75.0,33.2,8.9,40.5,9.9,7.5,0,直接主导,Direct_Dominant
+挪威语,Norwegian,无,None,78.8,35.9,9.2,36.0,11.6,7.4,0,直接主导,Direct_Dominant

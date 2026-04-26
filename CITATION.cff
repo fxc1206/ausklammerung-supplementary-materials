@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+message: "If you use these supplementary materials, please cite the associated paper as below."
+type: generic
+
+title: "框型结构对约束分工的组织作用——基于德语\"破框\"的可解释机器学习研究"
+abstract: >-
+  破框（Ausklammerung）集中体现了德语框型结构中的多重约束交互，但其协同机制尚缺乏系统实证。
+  本文基于汉堡依存树库（HDT）153,035 句科技新闻语料，运用可解释机器学习发现：各约束以信息
+  负荷与拓扑条件的非线性协同为核心，分化为"驱动—传导—边界"三重角色。德语 V2/VL 配置对短语
+  与从句产生相反调节；荷兰语及三种非框型北日耳曼语的对比进一步表明，传导路径随框型结构有无
+  而出现或消失。
+
+authors:
+  - given-names: "Xuchen"
+    family-names: "Fu"
+    affiliation: "Fudan University 复旦大学"
+    email: "fxc1206@qq.com"
+
+date-released: 2026-04
+year: 2026
+
+keywords:
+  - "German linguistics"
+  - "Ausklammerung"
+  - "extraposition"
+  - "Satzklammer"
+  - "topological field model"
+  - "interpretable machine learning"
+  - "Causal SHAP"
+  - "dependency syntax"
+  - "constraint interaction"
+  - "德语破框"
+  - "框型结构"
+  - "可解释机器学习"
+
+repository-code: "https://github.com/fxc1206/ausklammerung-supplementary-materials"
+url: "https://github.com/fxc1206/ausklammerung-supplementary-materials"
+
+license: CC-BY-4.0
+
+# 关联论文 / Associated paper
+preferred-citation:
+  type: unpublished
+  title: "框型结构对约束分工的组织作用——基于德语\"破框\"的可解释机器学习研究"
+  authors:
+    - given-names: "Xuchen"
+      family-names: "Fu"
+      affiliation: "Fudan University 复旦大学"
+  year: 2026
+  notes: >-
+    Paper submitted to 全国高校德语专业本科生学术创新大赛 (National Undergraduate
+    German Studies Academic Innovation Competition). Supplementary materials
+    available at https://github.com/fxc1206/ausklammerung-supplementary-materials
