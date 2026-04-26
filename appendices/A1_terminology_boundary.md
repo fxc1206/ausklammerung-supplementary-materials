@@ -1,10 +1,10 @@
 # 附录 A.1 · Ausklammerung 与 Extraposition 的概念边界
 
 > **Appendix A.1 · The Conceptual Boundary between Ausklammerung and Extraposition**
->
-> 本节论证传统术语中的"必要/可选"二分并非类型学上的本质对立，而是同一约束结构在不同句框配置下的行为分化。
->
-> *This section argues that the traditional dichotomy of "obligatory" vs. "optional" extraposition is not a typological binary, but a behavioral differentiation of the same constraint structure under different sentential frame configurations.*
+
+本节论证传统术语中的"必要 / 可选"二分并非类型学上的本质对立，而是同一约束结构在不同句框配置下的行为分化。
+
+*This section argues that the traditional dichotomy of "obligatory" vs. "optional" extraposition is not a typological binary, but a behavioral differentiation of the same constraint structure under different sentential frame configurations.*
 
 ---
 
@@ -18,31 +18,28 @@
 
 - 从句在 VL 句框下的破框率系统性高于 V2（宿主词中后段位置差距最大，达 **+34.5 个百分点**）
 - 短语则在 V2 句框下破框率更高
-- 详见[附表 E3](../docs/appendix.pdf)、[附表 E4](../docs/appendix.pdf)
+- 详见附表 E3、E4（[`docs/appendix.pdf`](../docs/appendix.pdf)）
 
 方向反转表明两类成分的外置受**不同结构机制**驱动：
 
 | 类型 | 句框 | 机制 |
-|:---|:---|:---|
+|:---:|:---:|:---|
 | "必要性" | VL | 动词簇压缩中场后从句被迫外置的**挤压机制** |
 | "可选性" | V2 | 中场空间充裕时短语在信息压力驱动下选择性逸出的**许可机制** |
 
-这一机制区分在先行质性研究中已有迹可循：
-
-> 从句因结构复杂度对母成分施加吸引力而进入后场（Attraktionsprinzip），短语的后场占位则在重量原则失效时由语义邻接等内容动因驱动（Vinckel，2006：76-82）。
+这一机制区分在先行质性研究中已有迹可循：从句因结构复杂度对母成分施加吸引力而进入后场（Attraktionsprinzip），短语的后场占位则在重量原则失效时由语义邻接等内容动因驱动（Vinckel，2006：76-82）。
 
 ## 约束架构层面的统一性
 
 上述分化限于**发生机制**层面；在**约束架构**层面，两类外置共享正文第三章第 1 节所确认的信息×拓扑条件协同架构，仅约束权重系统性地不同（正文第三章第 3 节，图 6）。
 
-本文因此将二者纳入统一的多维约束框架。**传统术语中的"必要/可选"对立不是类型学上的二分，而是同一约束结构在不同句框配置下的行为分化。**
+本文因此将二者纳入统一的多维约束框架。**传统术语中的"必要 / 可选"对立不是类型学上的二分，而是同一约束结构在不同句框配置下的行为分化。**
 
 ---
 
-## 相关图表 / Related Figures
+> 相关图表：[正文图 6 · 句框配置的双重调节](../figures/fig06_v2_vl_dual_modulation.png) ｜ 附表 E3、E4 见 [`docs/appendix.pdf`](../docs/appendix.pdf)
 
-- [`fig06_v2_vl_dual_modulation.png`](../figures/fig06_v2_vl_dual_modulation.png)（正文图 6 · 句框配置的双重调节）
-- 附表 E3 / E4（控制宿主词位置后的从句/短语破框率分布，见 `docs/appendix.pdf`）
+---
 
 ## 参考文献 / References
 
