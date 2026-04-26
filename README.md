@@ -3,9 +3,51 @@
 > The Organizing Role of the Sentential Frame in Constraint Division of Labor:
 > An Interpretable Machine Learning Study of German Ausklammerung
 
-本仓库为论文的在线补充材料，含术语与分布讨论（附录 A）、数据基础与方法（附录 B），以及协同结构（C）、角色分化（D）、框型组织（E）三组完整证据。正文中"附录 X"或"附表 X"均指本仓库对应部分。
+本仓库为论文的在线补充材料，含术语与分布讨论（附录 A）、数据基础与方法（B），以及协同结构（C）、角色分化（D）、框型组织（E）三组完整证据。
 
-*This repository provides online supplementary materials for the paper, comprising terminology and distribution discussions (Appendix A), data basis and methods (B), and full evidence for synergy structure (C), role differentiation (D), and frame organization (E).*
+*Online supplementary materials for the paper, comprising terminology and distribution discussions (Appendix A), data basis and methods (B), and full evidence for synergy structure (C), role differentiation (D), and frame organization (E).*
+
+---
+
+## 核心发现 / Key Findings
+
+<table>
+  <tr>
+    <td align="center" colspan="2">
+      <b>F2 · 驱动—传导—边界 / Three-Role Division</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="figures/fig04_causal_shap_decomposition.png" alt="F2: Causal SHAP path decomposition" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2" valign="top">
+      Causal SHAP 路径分解显示三类作用方式：信息负荷直接连续驱动（直接占比 ≥ 94%）；内部平均依存距离（MDD）经拓扑条件间接传导（传导占比 70.2%）；配价关系构成刚性边界（核心论元直接占比 99%）。
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <b>F1 · 非线性协同 / Non-linear Synergy</b>
+    </td>
+    <td align="center" width="50%">
+      <b>F3 · 框型结构组织 / Frame Organization</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><img src="figures/fig02_synergy_pr_auc.png" alt="F1: PR-AUC comparison" /></td>
+    <td align="center"><img src="figures/fig07_cross_linguistic.png" alt="F3: Cross-linguistic comparison" /></td>
+  </tr>
+  <tr>
+    <td valign="top">
+      信息负荷与拓扑许可的二维联合 PR-AUC 达 0.804，约为五维全集模型（0.886）的 89%；其余二维组合均不超过 0.73。两个维度单独时分别为 0.46 与 0.32，联合后的跃升远超叠加预期。
+    </td>
+    <td valign="top">
+      德语 V2/VL 配置对短语与从句的破框率施加方向相反的调节；MDD 传导占比在框型语言内部呈梯度递减（德语 66% → 荷兰语 49%），在三种非框型 V2 语言中均为 0%。
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -23,43 +65,6 @@
 破框（Ausklammerung）集中体现了德语框型结构中的多重约束交互，但其协同机制尚缺乏系统实证。本文基于汉堡依存树库（HDT）153,035 句科技新闻语料，运用可解释机器学习发现：各约束以信息负荷与拓扑条件的非线性协同为核心，分化为"驱动—传导—边界"三重角色。信息负荷连续直接驱动，认知压力经拓扑条件间接传导，配价关系构成刚性边界。德语 V2/VL 配置对短语与从句产生相反调节；荷兰语及三种非框型北日耳曼语的对比进一步表明，传导路径随框型结构有无而出现或消失，驱动与边界跨语言稳定。本文将破框解释单位由单个约束转向框型结构所组织的约束分工，为"人驱复杂适应系统"所论生物普遍性与语言特殊性的区分提供句法实证。
 
 **关键词** ：德语破框 · 框型结构 · 约束分工 · 作用路径 · 可解释机器学习
-
----
-
-## 核心发现 / Key Findings
-
-<table>
-  <tr>
-    <td align="center" width="33%">
-      <b>F1 · 非线性协同</b><br>
-      <i>Non-linear Synergy</i>
-    </td>
-    <td align="center" width="33%">
-      <b>F2 · 驱动—传导—边界</b><br>
-      <i>Three-Role Division</i>
-    </td>
-    <td align="center" width="33%">
-      <b>F3 · 框型结构组织</b><br>
-      <i>Frame Organization</i>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><img src="figures/fig02_synergy_pr_auc.png" alt="F1: PR-AUC comparison" /></td>
-    <td align="center"><img src="figures/fig04_causal_shap_decomposition.png" alt="F2: Causal SHAP path decomposition" /></td>
-    <td align="center"><img src="figures/fig07_cross_linguistic.png" alt="F3: Cross-linguistic comparison" /></td>
-  </tr>
-  <tr>
-    <td valign="top">
-      信息负荷与拓扑许可的二维联合 PR-AUC 达 0.804，约为五维全集模型（0.886）的 89%；其余二维组合均不超过 0.73。两个维度单独时分别为 0.46 与 0.32，联合后的跃升远超叠加预期。
-    </td>
-    <td valign="top">
-      Causal SHAP 路径分解显示三类作用方式：信息负荷直接连续驱动（直接占比 ≥ 94%）；内部平均依存距离（MDD）经拓扑条件间接传导（传导占比 70.2%）；配价关系构成刚性边界（核心论元直接占比 99%）。
-    </td>
-    <td valign="top">
-      德语 V2/VL 配置对短语与从句的破框率施加方向相反的调节；MDD 传导占比在框型语言内部呈梯度递减（德语 66% → 荷兰语 49%），在三种非框型 V2 语言中均为 0%。
-    </td>
-  </tr>
-</table>
 
 ---
 
