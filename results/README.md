@@ -1,46 +1,46 @@
 # 关键数值表 / Key Numerical Tables
 
-本目录提供论文核心结论所对应的数值表（CSV 格式，UTF-8 编码），从附录的关键表格转录而来，便于读者直接核查或在自有分析中引用。所有表头同时提供中文与英文版本以便跨语言使用。
+本目录提供论文核心结论所对应的数值表（CSV 格式，UTF-8 编码），从附录的关键表格转录而来，便于读者直接核查或在自有分析中引用。
 
-> *This directory provides numerical tables (CSV format, UTF-8) underlying the paper's core findings, transcribed from key tables in the appendix. All column headers are provided in both Chinese and English for cross-language use.*
+> *This directory provides numerical tables (CSV format, UTF-8) underlying the paper's core findings, transcribed from key tables in the appendix.*
 
 ---
 
 ## 文件清单 / File List
 
-| 文件 / File | 内容 / Content | 对应章节 / Section | 论据 / Supports |
+| 文件 | 内容 | 对应附表 | 论据 |
 |:---|:---|:---:|:---:|
-| [`causal_shap_total_contributions.csv`](causal_shap_total_contributions.csv) | 9 项核心特征的标准 SHAP / 直接贡献 / 传导贡献 / 总贡献 / 作用类型分类 | 正文 §3.2 · 附表 D1 | **F2** |
-| [`dimension_ablation.csv`](dimension_ablation.csv) | 31 组维度组合的完整 PR-AUC / ROC-AUC / F1 | 正文 §3.1 · 附表 C2 | **F1** |
-| [`cross_linguistic_comparison.csv`](cross_linguistic_comparison.csv) | 5 种日耳曼语言的维度贡献占比与 MDD 传导路径对比 | 正文 §3.3 · 附表 E7 | **F3** |
-| [`model_comparison.csv`](model_comparison.csv) | 5 类分类器（SVM/LR/RF/MLP/XGBoost）默认与调优参数下的完整性能 | 附表 C1 | **F1 配套** |
+| [`causal_shap_total_contributions.csv`](causal_shap_total_contributions.csv) | 9 项核心特征的标准 SHAP / 直接贡献 / 传导贡献 / 总贡献 / 作用类型 | 附表 D1 | **F2** |
+| [`dimension_ablation.csv`](dimension_ablation.csv) | 31 组维度组合的完整 PR-AUC / ROC-AUC / F1 | 附表 C2 | **F1** |
+| [`cross_linguistic_comparison.csv`](cross_linguistic_comparison.csv) | 5 种日耳曼语言的维度贡献占比与 MDD 传导路径对比 | 附表 E7 | **F3** |
+| [`model_comparison.csv`](model_comparison.csv) | 5 类分类器（SVM / 逻辑回归 / RF / MLP / XGBoost）默认与优化参数下的完整性能 | 附表 C1 | F1 配套 |
 
 ---
 
 ## 关键结论锚点 / Key Findings Anchored
 
-### 🔗 F1 · 非线性协同 / Non-linear Synergy
+### F1 · 非线性协同 / Non-linear Synergy
 
-> 来源：[`dimension_ablation.csv`](dimension_ablation.csv) + [`model_comparison.csv`](model_comparison.csv)
+来源：[`dimension_ablation.csv`](dimension_ablation.csv) + [`model_comparison.csv`](model_comparison.csv)
 
 - 全集 5 维 PR-AUC：**0.886**
 - 信息 + 拓扑 二维 PR-AUC：**0.804**（达全集 89%）
-- 任何二维组合均未超过 0.73（除信息 + 拓扑外）
+- 任何二维组合均不超过 0.73（除信息 + 拓扑外）
 - 非线性模型（XGBoost / RF / MLP）整体优于线性模型（SVM / LR）约 30 个百分点
 
-### ⚖️ F2 · 驱动—传导—边界 / Three-Role Division
+### F2 · 驱动—传导—边界 / Three-Role Division
 
-> 来源：[`causal_shap_total_contributions.csv`](causal_shap_total_contributions.csv)
+来源：[`causal_shap_total_contributions.csv`](causal_shap_total_contributions.csv)
 
 | 作用类型 | 特征 | 直接贡献占比 |
 |:---|:---|:---:|
-| **驱动主导** (7 项) | 累积惊奇度、宿主词位置、平均惊奇度、嵌套深度、词汇密度、上下文重叠度、成分至宿主距离 | 93–100% |
-| **传导主导** (1 项) | 内部平均依存距离 (Intra_MDD) | **34%**（即 66% 经拓扑传导） |
-| **刚性边界** (1 项) | 是否核心论元 | 99%（直接，但量级量化为外置抑制） |
+| 驱动主导（7 项） | 累积惊奇度、宿主词位置、平均惊奇度、嵌套深度、词汇密度、上下文重叠度、成分至宿主距离 | 93–100% |
+| 传导主导（1 项） | 内部平均依存距离 (MDD) | **34%**（即 66% 经拓扑传导） |
+| 刚性边界（1 项） | 是否核心论元 | 99%（直接，但量级量化为外置抑制） |
 
-### 🌐 F3 · 框型组织 / Frame Organization
+### F3 · 框型结构组织 / Frame Organization
 
-> 来源：[`cross_linguistic_comparison.csv`](cross_linguistic_comparison.csv)
+来源：[`cross_linguistic_comparison.csv`](cross_linguistic_comparison.csv)
 
 | 语言 | 框型结构 | MDD 传导占比 | 作用类型 |
 |:---|:---:|:---:|:---|
@@ -50,22 +50,27 @@
 | 丹麦语 | 无 | **0%** | 直接主导 |
 | 挪威语 | 无 | **0%** | 直接主导 |
 
-**核心断点**：传导路径在 V2 框型语言（德/荷）中存在，在三种非框型 V2 北日耳曼语中**消失**——证据指向框型结构对路径分化的组织作用。
+核心断点：传导路径在 V2 框型语言（德 / 荷）中存在，在三种非框型 V2 北日耳曼语中**消失** —— 证据指向框型结构对路径分化的组织作用。
 
 ---
 
-## 用法说明 / Usage Notes
+## 列名英文对照 / Column Name Reference (English)
 
-- **格式**：UTF-8 编码 CSV，逗号分隔；中英文列名并列
-- **NaN 处理**：宿主词位置的传导贡献为 0.0000（结构上无下游路径）
-- **数值精度**：与附录 PDF 中的表格保持一致；如需更高精度，请联系作者
-- **加载示例**：
-
-```python
-import pandas as pd
-df = pd.read_csv("results/causal_shap_total_contributions.csv")
-print(df[["特征", "总贡献", "作用类型"]])
-```
+| 中文列名 | English |
+|:---|:---|
+| 特征 | Feature |
+| 标准 SHAP | Standard SHAP |
+| 直接贡献 / 传导贡献 / 总贡献 | Direct / Transmitted / Total Contribution |
+| 作用类型 | Action Type |
+| 维度组合 / 维度数 | Dimension Combination / Number of Dimensions |
+| PR-AUC / ROC-AUC / F1 | (standard ML metrics) |
+| 语言 | Language |
+| 框型结构 | Sentential Frame |
+| 外置率 | Extraposition Rate |
+| 拓扑 / 加工 / 信息 / 形式 / 角色 | Topology / Processing / Information / Form / Role |
+| MDD 传导占比 | MDD Transmission Share |
+| 分类器 / 参数 | Classifier / Setting |
+| 精确率 / 召回率 | Precision / Recall |
 
 ---
 
